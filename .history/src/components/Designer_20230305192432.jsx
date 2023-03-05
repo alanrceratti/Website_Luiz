@@ -98,19 +98,19 @@ const Designer = () => {
 						</Splide>
 					</div>
 				) : ( */}
-				<div className="imgGridDesigner">
-					<div>
-						{images.map((image) => (
-							<img
-								key={image.id}
-								src={image.src}
-								alt={image.alt}
-								// onClick={() => handleImageClick(image)}
-							/>
-						))}
+					<div className="imgGridDesigner">
+						<div>
+							{images.map((image) => (
+								<img
+									key={image.id}
+									src={image.src}
+									alt={image.alt}
+									// onClick={() => handleImageClick(image)}
+								/>
+							))}
+						</div>
 					</div>
-				</div>
-				{/* )} */}
+				)}
 			</div>
 		</section>
 	);
