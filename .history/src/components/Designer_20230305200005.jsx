@@ -92,8 +92,8 @@ const Designer = () => {
 					</div>
 				</div>
 
-				{mobile ? (
-					<div className="buttonsDesigner2">
+				{!mobile ? (
+					<div className="buttonsDesigner">
 						{/* <a href={cv} download="cv.pdf"> */}
 
 						<div>

@@ -31,12 +31,11 @@
 					font-family: var(--font2);
 					font-size: 24px;
 					color: rgb(149, 149, 149);
-					margin-bottom: 30px;
+                    margin-bottom: 0px;
 				}
 				p {
 					font-family: var(--font2);
 					font-size: 20px;
-					margin-bottom: 10px;
 				}
 			}
 		}
@@ -139,7 +138,7 @@
 			.gridDescriptionDesigner {
 				grid-column: 1/13;
 				grid-row: 3/5;
-				margin-top: 40px;
+				margin-top: 30px;
 				margin-left: 0px;
 				min-width: 15rem;
 
@@ -147,17 +146,16 @@
 					h2 {
 						font-family: var(--font1);
 						font-size: 22px;
+						margin-bottom: 0px;
 					}
 					h3 {
 						font-family: var(--font2);
 						font-size: 18px;
 						color: rgb(149, 149, 149);
-						margin-bottom: 40px;
 					}
 					p {
 						font-family: var(--font2);
 						font-size: 18px;
-						margin-bottom: 20px;
 					}
 				}
 			}

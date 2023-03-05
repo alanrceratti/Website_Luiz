@@ -50,35 +50,54 @@ const Designer = () => {
 							massive background is now condensed into Source
 							Design. And it's everything just for you.
 						</p>
-						{!mobile ? (
-							<div className="buttonsDesigner">
-								{/* <a href={cv} download="cv.pdf"> */}
 
-								<div>
-									<AiOutlineLinkedin
-										className="icon"
-										size={40}
-										color={"#000000"}
-									/>
-								</div>
-								<div className="divlinkedin">
-									<a>Linkedin</a>
-								</div>
-								<div>
-									<TbFileDownload
-										className="icon"
-										size={40}
-										color={"#000000"}
-									/>
-								</div>
-								<div className="divresume">
-									<a>Resume</a>
-								</div>
+						<div className="buttonsDesigner">
+							{/* <a href={cv} download="cv.pdf"> */}
+
+							<div>
+								<AiOutlineLinkedin
+									className="icon"
+									size={40}
+									color={"#000000"}
+								/>
 							</div>
-						) : null}
+							<div className="divlinkedin">
+								<a>Linkedin</a>
+							</div>
+							<div>
+								<TbFileDownload
+									className="icon"
+									size={40}
+									color={"#000000"}
+								/>
+							</div>
+							<div className="divresume">
+								<a>Resume</a>
+							</div>
+						</div>
 					</div>
 				</div>
-
+				{/* {mobile ? (
+					<div className="sliderDesigner">
+						<Splide
+							data-splide='{"type":"loop","height":"15rem","Width":"100%", "gap": "2em", "easing":"ease", "autoplay":"true", "interval": "3000" }'
+							aria-label="My Favorite Images"
+						>
+							<SplideSlide>
+								<img src={bg2} alt="Image 2" />
+							</SplideSlide>
+							<SplideSlide>
+								<img src={award} alt="Image 2" />
+							</SplideSlide>
+							<SplideSlide>
+								<img src={fields} alt="Image 2" />
+							</SplideSlide>
+							<SplideSlide>
+								<img src={projects} alt="Image 2" />
+							</SplideSlide>
+						</Splide>
+					</div>
+				) : ( */}
 				<div className="imgGridDesigner">
 					<div>
 						{images.map((image) => (
@@ -91,33 +110,7 @@ const Designer = () => {
 						))}
 					</div>
 				</div>
-
-				{mobile ? (
-					<div className="buttonsDesigner2">
-						{/* <a href={cv} download="cv.pdf"> */}
-
-						<div>
-							<AiOutlineLinkedin
-								className="icon"
-								size={40}
-								color={"#000000"}
-							/>
-						</div>
-						<div className="divlinkedin">
-							<a>Linkedin</a>
-						</div>
-						<div>
-							<TbFileDownload
-								className="icon"
-								size={40}
-								color={"#000000"}
-							/>
-						</div>
-						<div className="divresume">
-							<a>Resume</a>
-						</div>
-					</div>
-				) : null}
+				{/* )} */}
 			</div>
 		</section>
 	);

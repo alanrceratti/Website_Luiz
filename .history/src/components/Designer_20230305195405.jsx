@@ -50,32 +50,6 @@ const Designer = () => {
 							massive background is now condensed into Source
 							Design. And it's everything just for you.
 						</p>
-						{!mobile ? (
-							<div className="buttonsDesigner">
-								{/* <a href={cv} download="cv.pdf"> */}
-
-								<div>
-									<AiOutlineLinkedin
-										className="icon"
-										size={40}
-										color={"#000000"}
-									/>
-								</div>
-								<div className="divlinkedin">
-									<a>Linkedin</a>
-								</div>
-								<div>
-									<TbFileDownload
-										className="icon"
-										size={40}
-										color={"#000000"}
-									/>
-								</div>
-								<div className="divresume">
-									<a>Resume</a>
-								</div>
-							</div>
-						) : null}
 					</div>
 				</div>
 
@@ -91,33 +65,54 @@ const Designer = () => {
 						))}
 					</div>
 				</div>
+			</div>
+			<div className="buttonsDesigner">
+				{/* <a href={cv} download="cv.pdf"> */}
 
-				{mobile ? (
-					<div className="buttonsDesigner2">
-						{/* <a href={cv} download="cv.pdf"> */}
+				<div>
+					<AiOutlineLinkedin
+						className="icon"
+						size={40}
+						color={"#000000"}
+					/>
+				</div>
+				<div className="divlinkedin">
+					<a>Linkedin</a>
+				</div>
+				<div>
+					<TbFileDownload
+						className="icon"
+						size={40}
+						color={"#000000"}
+					/>
+				</div>
+				<div className="divresume">
+					<a>Resume</a>
+				</div>
+				<div className="buttonsDesigner">
+					{/* <a href={cv} download="cv.pdf"> */}
 
-						<div>
-							<AiOutlineLinkedin
-								className="icon"
-								size={40}
-								color={"#000000"}
-							/>
-						</div>
-						<div className="divlinkedin">
-							<a>Linkedin</a>
-						</div>
-						<div>
-							<TbFileDownload
-								className="icon"
-								size={40}
-								color={"#000000"}
-							/>
-						</div>
-						<div className="divresume">
-							<a>Resume</a>
-						</div>
+					<div>
+						<AiOutlineLinkedin
+							className="icon"
+							size={40}
+							color={"#000000"}
+						/>
 					</div>
-				) : null}
+					<div className="divlinkedin">
+						<a>Linkedin</a>
+					</div>
+					<div>
+						<TbFileDownload
+							className="icon"
+							size={40}
+							color={"#000000"}
+						/>
+					</div>
+					<div className="divresume">
+						<a>Resume</a>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

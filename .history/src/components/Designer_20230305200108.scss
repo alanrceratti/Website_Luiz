@@ -25,18 +25,15 @@
 					font-family: var(--font1);
 					font-size: 32px;
 					margin-bottom: 0px;
-					font-weight: 100;
 				}
 				h3 {
 					font-family: var(--font2);
 					font-size: 24px;
 					color: rgb(149, 149, 149);
-					margin-bottom: 30px;
 				}
 				p {
 					font-family: var(--font2);
 					font-size: 20px;
-					margin-bottom: 10px;
 				}
 			}
 		}
@@ -106,7 +103,7 @@
 			}
 			a:hover {
 				color: rgb(255, 255, 255);
-				background: black;
+				background: vb;
 				transition: 0.3s;
 			}
 		}
@@ -117,7 +114,6 @@
 	.containerDesigner {
 		width: 100vw;
 		height: fit-content;
-		position: relative;
 		.gridDesigner {
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
@@ -139,7 +135,7 @@
 			.gridDescriptionDesigner {
 				grid-column: 1/13;
 				grid-row: 3/5;
-				margin-top: 40px;
+				margin-top: 30px;
 				margin-left: 0px;
 				min-width: 15rem;
 
@@ -147,17 +143,51 @@
 					h2 {
 						font-family: var(--font1);
 						font-size: 22px;
+						margin-bottom: 0px;
 					}
 					h3 {
 						font-family: var(--font2);
 						font-size: 18px;
 						color: rgb(149, 149, 149);
-						margin-bottom: 40px;
 					}
 					p {
 						font-family: var(--font2);
 						font-size: 18px;
-						margin-bottom: 20px;
+					}
+				}
+
+				.buttonsDesigner {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					display: flex;
+					.divlinkedin {
+						margin-right: 0rem;
+					}
+
+					div {
+						margin: 0;
+						margin-top: 5rem;
+						margin-bottom: 0rem;
+
+						a {
+							padding: 0.8rem 1.5rem;
+
+							border: none;
+							font-size: 1rem;
+							font-family: var(--font2);
+							cursor: pointer;
+							align-items: center;
+							justify-content: center;
+							color: rgb(255, 255, 255);
+							background: rgba(0, 0, 0, 0.711);
+						}
+						a:hover {
+							color: rgb(255, 255, 255);
+							background: var(--color1);
+							transition: 0.3s;
+						}
 					}
 				}
 			}
@@ -172,7 +202,6 @@
 					gap: 0.5rem;
 					height: 20rem;
 					margin: 50px auto;
-					margin-bottom: 100px;
 
 					img:nth-child(1) {
 						grid-column: 1/2;
@@ -194,43 +223,6 @@
 						grid-row: 2/7;
 						object-fit: cover;
 					}
-				}
-			}
-		}
-		.buttonsDesigner2 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			display: flex;
-			position: absolute;
-			bottom: 0rem;
-			left: 0px;
-			.divlinkedin {
-				margin-right: 0rem;
-			}
-
-			div {
-				margin: 0;
-				margin-top: 5rem;
-				margin-bottom: 0rem;
-
-				a {
-					padding: 0.8rem 1.5rem;
-
-					border: none;
-					font-size: 1rem;
-					font-family: var(--font2);
-					cursor: pointer;
-					align-items: center;
-					justify-content: center;
-					color: rgb(255, 255, 255);
-					background: rgba(0, 0, 0, 0.711);
-				}
-				a:hover {
-					color: rgb(255, 255, 255);
-					background: var(--color1);
-					transition: 0.3s;
 				}
 			}
 		}
