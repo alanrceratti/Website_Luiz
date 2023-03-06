@@ -148,6 +148,10 @@
 		}
 		.buttonsDesigner {
 			grid-column: 1/13;
+
+			.divlinkedin {
+				margin-right: 1rem;
+			}
 		}
 	}
 }
@@ -185,9 +189,6 @@
 				}
 			}
 		}
-		.buttonsDesigner {
-			grid-column: 2/13;
-		}
 	}
 }
 @media screen and (min-width: 26rem) and (max-width: 40rem) {
@@ -218,9 +219,6 @@
 				margin-left: 18px;
 				margin-bottom: 100px;
 			}
-		}
-		.buttonsDesigner {
-			grid-column: 2/13;
 		}
 	}
 }

@@ -5,22 +5,15 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(
-		164,
-		164,
-		164,
-		0.25
-	); /* Set the desired opacity here */
+	background-color: rgba(0, 0, 0, 0.08); /* Set the desired opacity here */
 	z-index: -1; /* Move the overlay behind the container's content */
 }
 .containerFields {
 	background: url("../../public/bg.svg");
 	background-repeat: repeat-y;
-	background-size: cover;
 	width: calc(100vw - 20px);
 	height: fit-content;
 	position: relative;
-	margin-top: 80px;
 	.gridFields {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);

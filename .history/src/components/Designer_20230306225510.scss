@@ -42,7 +42,7 @@
 		}
 		.imgGridDesigner {
 			grid-column: 6/12;
-			grid-row: 4/11;
+			grid-row: 4/12;
 
 			div {
 				display: grid;
@@ -79,8 +79,6 @@
 		}
 	}
 	.buttonsDesigner {
-		grid-column: 6/12;
-		grid-row: 12;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -146,9 +144,6 @@
 				}
 			}
 		}
-		.buttonsDesigner {
-			grid-column: 1/13;
-		}
 	}
 }
 @media screen and (min-width: 40rem) and (max-width: 60rem) {
@@ -185,9 +180,6 @@
 				}
 			}
 		}
-		.buttonsDesigner {
-			grid-column: 2/13;
-		}
 	}
 }
 @media screen and (min-width: 26rem) and (max-width: 40rem) {
@@ -218,9 +210,6 @@
 				margin-left: 18px;
 				margin-bottom: 100px;
 			}
-		}
-		.buttonsDesigner {
-			grid-column: 2/13;
 		}
 	}
 }
@@ -308,7 +297,8 @@
 				}
 			}
 			.buttonsDesigner2 {
-				display: flex;
+				grid-column: 1/13;
+				grid-row: 11/12;
 				justify-content: center;
 				align-items: center;
 				width: 100%;
