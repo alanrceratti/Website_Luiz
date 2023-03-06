@@ -1,0 +1,212 @@
+.containerFields {
+	background: url("../../public/bg.svg");
+	width: calc(100vw - 20px);
+	height: fit-content;
+	position: relative;
+	.gridFields {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		height: 100vh;
+		padding-bottom: 100px;
+
+		.textFields {
+			grid-column: 1/12;
+			grid-row: 1/3;
+			margin-left: 150px;
+
+			margin-top: 80px;
+		}
+		.imgGridFields {
+			grid-column: 1/8;
+			grid-row: 6/12;
+			margin-left: 118px;
+			min-width: 35rem;
+
+			div {
+				display: grid;
+				width: 100%;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows: auto;
+				gap: 1rem;
+				height: 40rem;
+				margin: 0 auto;
+				margin-left: 2rem;
+				margin-right: 10px;
+
+				img:nth-child(1) {
+					grid-column: 1/7;
+					grid-row: 3/7;
+					object-fit: cover;
+				}
+				img:nth-child(2) {
+					grid-column: 7/12;
+					grid-row: 1/6;
+					object-fit: cover;
+				}
+				img:nth-child(3) {
+					grid-column: 2/7;
+					grid-row: 7/13;
+					object-fit: cover;
+				}
+				img:nth-child(4) {
+					grid-column: 7/13;
+					grid-row: 6/12;
+					object-fit: cover;
+				}
+			}
+		}
+		.containerTextFields {
+			grid-column: 10/12;
+			grid-row: 9/12;
+
+			width: 33rem;
+			height: 20rem;
+			background-color: var(--color1);
+
+			bottom: 150px;
+			right: 100px;
+
+			.divTextFiels {
+				p {
+					font-size: 40px;
+					font-family: var(--font2);
+					color: white;
+					line-height: 50px;
+					text-align: left;
+
+					margin: 3rem 2rem 0rem 2rem;
+				}
+			}
+			Button {
+				float: right;
+				margin-right: 70px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 60rem) and (max-width: 82rem) {
+	.containerFields {
+		height: fit-content;
+
+		.gridFields {
+			height: fit-content;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: auto;
+			.textFields {
+				margin-left: 100px;
+				margin-top: 80px;
+				margin-bottom: 100px;
+			}
+			.imgGridFields {
+				grid-column: 1/12;
+				grid-row: 4/9;
+				margin-left: 68px;
+				margin-right: 68px;
+				margin-bottom: 100px;
+				min-width: 35rem;
+				// div {
+				// 	display: grid;
+				// 	width: 100%;
+				// 	grid-template-columns: repeat(12, 1fr);
+				// 	grid-template-rows: auto;
+				// 	gap: 1rem;
+				// 	height: 40rem;
+				// 	margin: 0 auto;
+				// 	margin-left: 2rem;
+				// 	margin-right: 150px;
+
+				// 	img:nth-child(1) {
+				// 		grid-column: 1/7;
+				// 		grid-row: 3/7;
+				// 		object-fit: cover;
+				// 	}
+				// 	img:nth-child(2) {
+				// 		grid-column: 7/12;
+				// 		grid-row: 1/6;
+				// 		object-fit: cover;
+				// 	}
+				// 	img:nth-child(3) {
+				// 		grid-column: 2/7;
+				// 		grid-row: 7/13;
+				// 		object-fit: cover;
+				// 	}
+				// 	img:nth-child(4) {
+				// 		grid-column: 7/13;
+				// 		grid-row: 6/12;
+				// 		object-fit: cover;
+				// 	}
+				//}
+			}
+			.containerTextFields {
+				grid-column: 8/12;
+				grid-row: 10/13;
+				margin-right: 35px;
+				width: 28rem;
+				height: 16rem;
+
+				.divTextFiels {
+					p {
+						font-size: 30px;
+						margin: 2rem 2rem 0rem 2rem;
+					}
+				}
+				Button {
+					float: right;
+					margin-right: 70px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 43rem) and (max-width: 60rem) {
+	.containerFields {
+		height: fit-content;
+		.gridFields {
+			height: fit-content;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: auto;
+			.textFields {
+				grid-column: 1/11;
+				margin-left: 100px;
+				margin-top: 80px;
+				margin-bottom: 100px;
+				h1 {
+					font-size: 6rem;
+				}
+			}
+			.imgGridFields {
+				grid-column: 1/11;
+
+				grid-row: 4/9;
+				margin-left: 50px;
+				margin-right: 80px;
+				margin-bottom: 100px;
+				min-width: 35rem;
+			}
+			.containerTextFields {
+				grid-column: 5/13;
+				grid-row: 10/13;
+				margin-right: 35px;
+
+				width: 28rem;
+				height: 16rem;
+				background-color: var(--color1);
+
+				.divTextFiels {
+					p {
+						font-size: 30px;
+
+						margin: 2rem 2rem 0rem 2rem;
+					}
+				}
+				Button {
+					float: right;
+					margin-right: 70px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 26rem) and (max-width: 43rem) {
+}
