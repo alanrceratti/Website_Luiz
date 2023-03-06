@@ -1,23 +1,34 @@
+.containerFields::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* Updated */
+	background-color: #f0f0f05b;
+	z-index: -1;
+}
+
 .containerFields {
 	background: url("../../public/bg2.svg");
 	background-repeat: repeat-y;
 	background-size: cover;
-	width: calc(100% - 20px);
-	height: 100%;
+	width: calc(100vw - 20px);
+	height: 100vh; /* Updated */
 	position: relative;
 	margin-top: 80px;
+
 	.gridFields {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto;
-		height: 100%;
+		grid-template-rows: repeat(12, 1fr);
+		height: 100vh;
 		padding-bottom: 100px;
 
 		.textFields {
 			grid-column: 1/12;
 			grid-row: 1/3;
 			margin-left: 150px;
-			margin-bottom: 50px;
 			margin-top: 80px;
 		}
 		.imgGridFields {
@@ -62,11 +73,9 @@
 		.containerTextFields {
 			grid-column: 10/12;
 			grid-row: 9/12;
-
 			width: 33rem;
 			height: 20rem;
 			background-color: var(--color1);
-
 			bottom: 150px;
 			right: 100px;
 
@@ -77,7 +86,6 @@
 					color: white;
 					line-height: 50px;
 					text-align: left;
-
 					margin: 3rem 2rem 0rem 2rem;
 				}
 			}
@@ -90,10 +98,10 @@
 }
 @media screen and (min-width: 60rem) and (max-width: 82rem) {
 	.containerFields {
-		height: 100%;
+		height: fit-content;
 
 		.gridFields {
-			height: 100%;
+			height: fit-content;
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: auto;
 			.textFields {

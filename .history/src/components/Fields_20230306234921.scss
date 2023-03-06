@@ -2,8 +2,8 @@
 	background: url("../../public/bg2.svg");
 	background-repeat: repeat-y;
 	background-size: cover;
-	width: calc(100% - 20px);
-	height: 100%;
+	width: calc(100vw - 20px);
+	height: f;
 	position: relative;
 	margin-top: 80px;
 	.gridFields {
@@ -90,10 +90,10 @@
 }
 @media screen and (min-width: 60rem) and (max-width: 82rem) {
 	.containerFields {
-		height: 100%;
+		height: fit-content;
 
 		.gridFields {
-			height: 100%;
+			height: fit-content;
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: auto;
 			.textFields {

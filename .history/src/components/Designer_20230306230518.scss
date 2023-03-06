@@ -1,12 +1,12 @@
 .containerDesigner {
 	background: white;
 	width: calc(100vw - 20px);
-	height: 100%;
+	height: 100vh;
 	.gridDesigner {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto;
-		height: 100%;
+		grid-template-rows: repeat(12, 1fr);
+		height: 100vh;
 
 		.textDesigner {
 			grid-column: 1/13;
@@ -234,7 +234,7 @@
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: auto;
 			height: fit-content;
-			margin: 0rem 2rem;
+			margin: 0rem 1rem;
 			.sliderDesigner {
 				margin: 5rem 0rem 1rem 0rem;
 			}
@@ -249,13 +249,12 @@
 			}
 			.gridDescriptionDesigner {
 				grid-column: 1/13;
-				grid-row: 3/6;
-				margin-top: 0px;
+				grid-row: 3/5;
+				margin-top: 40px;
 				margin-left: 0px;
 				min-width: 15rem;
 
 				.DescriptionDesigner {
-					margin-top: 40px;
 					h2 {
 						font-family: var(--font1);
 						font-size: 22px;

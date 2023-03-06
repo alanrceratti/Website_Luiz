@@ -1,12 +1,12 @@
 .containerDesigner {
 	background: white;
 	width: calc(100vw - 20px);
-	height: 100%;
+	height: 100vh;
 	.gridDesigner {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto;
-		height: 100%;
+		grid-template-rows: repeat(12, 1fr);
+		height: 100vh;
 
 		.textDesigner {
 			grid-column: 1/13;
@@ -249,7 +249,7 @@
 			}
 			.gridDescriptionDesigner {
 				grid-column: 1/13;
-				grid-row: 3/6;
+				grid-row: 3/8;
 				margin-top: 0px;
 				margin-left: 0px;
 				min-width: 15rem;
