@@ -1,0 +1,104 @@
+.containerSource {
+	height: 100%;
+	width: calc(100vw - 20px);
+	.containerSource2 {
+		background-image: url("../assets/bg-main.jpg");
+		position: sticky;
+		background-size: cover;
+		background-position: center center;
+		height: 100%;
+		width: 100%;
+		top: 1px;
+	}
+	.logo {
+		margin: 0 auto;
+		padding-top: 2rem;
+		max-width: 550px;
+		max-height: 250px;
+		width: auto;
+		height: auto;
+	}
+	.containerText {
+		width: 33rem;
+		height: 20rem;
+		background-color: var(--color1);
+		position: absolute;
+		bottom: 150px;
+		right: 100px;
+
+		.divText {
+			p {
+				font-size: 40px;
+				font-family: var(--font2);
+				color: white;
+				line-height: 50px;
+				text-align: left;
+
+				margin: 1rem 2rem 0rem 2rem;
+			}
+		}
+		Button {
+			float: right;
+			margin-right: 70px;
+		}
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 26rem) {
+	.containerSource {
+		height: 100vh;
+		width: 100vw;
+		.logo {
+			padding-top: 2rem;
+			max-width: 350px;
+			max-height: 250px;
+		}
+		.containerText {
+			width: 15rem;
+			height: 9rem;
+			bottom: 100px;
+			right: 20px;
+
+			.divText {
+				p {
+					font-size: 1rem;
+					line-height: 120%;
+					margin: 1rem 1rem 0rem 1rem;
+				}
+			}
+			Button {
+				margin-right: 30px;
+				padding: 0.3rem 1rem;
+			}
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 56rem) {
+	.containerSource {
+		height: 100vh;
+		width: 100vw;
+		.logo {
+			padding-top: 2rem;
+			max-width: 350px;
+			max-height: 250px;
+		}
+		.containerText {
+			width: 15rem;
+			height: 9rem;
+			bottom: 100px;
+			right: 20px;
+
+			.divText {
+				p {
+					font-size: 1rem;
+					line-height: 120%;
+					margin: 1rem 1rem 0rem 1rem;
+				}
+			}
+			Button {
+				margin-right: 30px;
+				padding: 0.3rem 1rem;
+			}
+		}
+	}
+}
