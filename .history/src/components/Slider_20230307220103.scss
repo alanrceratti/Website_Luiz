@@ -1,0 +1,38 @@
+.carouselInsta {
+	margin: 2rem;
+}
+
+.textSlider {
+	color: rgb(0, 0, 0);
+	margin: 0px;
+	margin-bottom: 2rem;
+	font-size: 7.5rem;
+	font-family: var(--font1);
+	text-align: left;
+
+	margin-left: 110px;
+	margin-bottom: 50px;
+	margin-top: 80px;
+	line-height: 90%;
+}
+
+@media screen and (min-width: 60rem) and (max-width: 82rem) {
+}
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+	.textSlider {
+		font-size: 6rem;
+
+		margin-left: 68px;
+		margin-bottom: 50px;
+		margin-top: 80px;
+		line-height: 90%;
+	}
+}
+@media screen and (min-width: 26rem) and (max-width: 40rem) {
+	.textSlider {
+		font-size: 5rem;
+		margin-left: 32px;
+	}
+}
+@media screen and (orientation: portrait) and (max-width: 26rem) {
+}
