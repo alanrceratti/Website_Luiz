@@ -28,15 +28,13 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			margin: 2rem;
-			gap: 1rem;
-			justify-content: center;
-			align-items: center;
 			div {
 				margin-right: 1rem;
 				img {
+					max-width: 20rem;
 					margin: 0 auto;
-					width: 350px;
-					height: 500px;
+					width: auto;
+					height: auto;
 				}
 			}
 		}
