@@ -1,11 +1,5 @@
 import React from "react";
 import "./Slider.scss";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import bg from "../assets/bg-main.jpg";
-import fields from "../assets/fields.jpg";
-import award from "../assets/award.jpg";
-import project from "../assets/projects.jpg";
-import "../components/splide-default.min.css";
 
 const Slider = () => {
 	return (

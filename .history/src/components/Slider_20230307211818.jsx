@@ -1,6 +1,8 @@
 import React from "react";
 import "./Slider.scss";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "./InstagramSource.css";
 import bg from "../assets/bg-main.jpg";
 import fields from "../assets/fields.jpg";
 import award from "../assets/award.jpg";

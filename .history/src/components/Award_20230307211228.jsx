@@ -1,10 +1,5 @@
 import React from "react";
 import "./Award.scss";
-import bg2 from "../assets/bg-main.jpg";
-import award from "../assets/award.jpg";
-import fields from "../assets/fields.jpg";
-import projects from "../assets/projects.jpg";
-import Button from "./Button";
 
 const Award = () => {
 	const images = [

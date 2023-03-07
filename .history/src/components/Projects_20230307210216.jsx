@@ -1,12 +1,12 @@
 import React from "react";
-import "./Award.scss";
+import Button from "./Button";
+import "./Projects.scss";
 import bg2 from "../assets/bg-main.jpg";
 import award from "../assets/award.jpg";
 import fields from "../assets/fields.jpg";
 import projects from "../assets/projects.jpg";
-import Button from "./Button";
 
-const Award = () => {
+const Projects = () => {
 	const images = [
 		{ id: 1, src: bg2, alt: "Image 1" },
 		{ id: 2, src: award, alt: "Image 2" },
@@ -14,13 +14,13 @@ const Award = () => {
 		{ id: 4, src: projects, alt: "Image 4" },
 	];
 	return (
-		<section className="containerAward">
-			<div className="gridAward">
+		<section className="containerProjects">
+			<div className="gridProjects">
 				<div className="line"></div>
-				<div className="textAward">
-					<h1>An Award Winning Piece</h1>
+				<div className="textProjects">
+					<h1>Projects Of Design</h1>
 				</div>
-				<div className="imgGridAward">
+				<div className="imgGridProjects">
 					<div>
 						{images.map((image) => (
 							<img
@@ -32,15 +32,17 @@ const Award = () => {
 						))}
 					</div>
 				</div>
+				<div>
+					<div className="containerTextProjects">
+						<div className="divTextProjects">
+							<p>
+								Take a look onto the Furniture, Interiors,
+								Landscaping designs plus a few sketches right
+								here.
+							</p>
 
-				<div className="containerTextAward">
-					<div className="divTextAward">
-						<p>
-							How come we had got this fascinating chair creation
-							recognised by an important Brazilian contest.
-						</p>
-
-						<Button name="more +" />
+							<Button name="more +" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -48,4 +50,4 @@ const Award = () => {
 	);
 };
 
-export default Award;
+export default Projects;

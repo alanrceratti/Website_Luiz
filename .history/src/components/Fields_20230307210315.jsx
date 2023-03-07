@@ -1,12 +1,15 @@
 import React from "react";
-import "./Award.scss";
+import "./Fields.scss";
+import bg from "../../public/bg.svg";
 import bg2 from "../assets/bg-main.jpg";
 import award from "../assets/award.jpg";
 import fields from "../assets/fields.jpg";
 import projects from "../assets/projects.jpg";
+import useMedia from "../hooks/useMedia";
 import Button from "./Button";
 
-const Award = () => {
+const Fields = () => {
+	const mobile = useMedia("(max-width: 26rem)");
 	const images = [
 		{ id: 1, src: bg2, alt: "Image 1" },
 		{ id: 2, src: award, alt: "Image 2" },
@@ -14,13 +17,14 @@ const Award = () => {
 		{ id: 4, src: projects, alt: "Image 4" },
 	];
 	return (
-		<section className="containerAward">
-			<div className="gridAward">
-				<div className="line"></div>
-				<div className="textAward">
-					<h1>An Award Winning Piece</h1>
+		<section className="containerFields">
+			<div className="gridFields">
+			<div className="line"></div>
+				<div className="textFields">
+					<h1>The Fields</h1>
+					<h1>Already Passed By</h1>
 				</div>
-				<div className="imgGridAward">
+				<div className="imgGridFields">
 					<div>
 						{images.map((image) => (
 							<img
@@ -32,12 +36,11 @@ const Award = () => {
 						))}
 					</div>
 				</div>
-
-				<div className="containerTextAward">
-					<div className="divTextAward">
+				<div className="containerTextFields">
+					<div className="divTextFiels">
 						<p>
-							How come we had got this fascinating chair creation
-							recognised by an important Brazilian contest.
+							The Designer career illustrated from different
+							concepts and missions.
 						</p>
 
 						<Button name="more +" />
@@ -48,4 +51,4 @@ const Award = () => {
 	);
 };
 
-export default Award;
+export default Fields;

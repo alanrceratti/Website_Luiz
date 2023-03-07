@@ -1,18 +1,7 @@
 import React from "react";
-import Button from "./Button";
-import "./Projects.scss";
-import bg2 from "../assets/bg-main.jpg";
-import award from "../assets/award.jpg";
-import fields from "../assets/fields.jpg";
-import projects from "../assets/projects.jpg";
+import "./Award.scss";
 
-const Projects = () => {
-	const images = [
-		{ id: 1, src: bg2, alt: "Image 1" },
-		{ id: 2, src: award, alt: "Image 2" },
-		{ id: 3, src: fields, alt: "Image 3" },
-		{ id: 4, src: projects, alt: "Image 4" },
-	];
+const Award = () => {
 	return (
 		<section className="containerProjects">
 			<div className="gridProjects">
@@ -36,8 +25,8 @@ const Projects = () => {
 				<div className="containerTextProjects">
 					<div className="divTextProjects">
 						<p>
-							Take a look onto the Furniture, Interiors,
-							Landscaping designs plus a few sketches right here.
+							How come we had got this fascinating chair creation
+							recognised by an important Brazilian contest.
 						</p>
 
 						<Button name="more +" />
@@ -48,4 +37,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Award;

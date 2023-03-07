@@ -1,10 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import "./Projects.scss";
-import bg2 from "../assets/bg-main.jpg";
-import award from "../assets/award.jpg";
-import fields from "../assets/fields.jpg";
-import projects from "../assets/projects.jpg";
 
 const Projects = () => {
 	const images = [
@@ -20,7 +16,7 @@ const Projects = () => {
 				<div className="textProjects">
 					<h1>Projects Of Design</h1>
 				</div>
-				<div className="imgGridProjects">
+				<div className="imgGridFields">
 					<div>
 						{images.map((image) => (
 							<img
@@ -32,16 +28,13 @@ const Projects = () => {
 						))}
 					</div>
 				</div>
+				<div>
+					<p>
+						Take a look onto the Furniture, Interiors, Landscaping
+						designs plus a few sketches right here.
+					</p>
 
-				<div className="containerTextProjects">
-					<div className="divTextProjects">
-						<p>
-							Take a look onto the Furniture, Interiors,
-							Landscaping designs plus a few sketches right here.
-						</p>
-
-						<Button name="more +" />
-					</div>
+					<Button name="more +" />
 				</div>
 			</div>
 		</section>
