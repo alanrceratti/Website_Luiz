@@ -1,0 +1,123 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+	display: block;
+	border: 1px solid rgba(84, 84, 84, 0.4);
+	width: 100%;
+
+	background: rgb(239, 239, 239);
+	transition: 0.2s;
+	margin: 0.5rem 0 1rem 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: var(--blue);
+	background: rgba(255, 255, 255, 0.568);
+	box-shadow: 0 0 0 3px var(--orange);
+}
+.containerForm {
+	padding: 2rem;
+	width: 100%;
+
+	.form {
+		display: flex;
+		border: 1px solid black;
+
+		width: 350px;
+		height: 500px;
+
+		backdrop-filter: blur(2px) saturate(100%);
+		-webkit-backdrop-filter: blur(2px) saturate(100%);
+		background-color: rgb(255, 255, 255);
+
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		margin: 0 auto;
+		form {
+			width: 100%;
+			margin: 1.5rem;
+
+			.label {
+				text-align: left;
+				display: inline-block;
+				width: 100%;
+				font-family: var(--font2);
+				font-size: 1rem;
+				color: rgb(0, 0, 0);
+			}
+
+			textarea {
+				font-family: var(--font2);
+
+				font-size: 1rem;
+				border: 1px solid rgba(84, 84, 84, 0.4);
+				color: black;
+			}
+		}
+		.sendButton {
+			width: 100%;
+		}
+		button {
+			margin: 0px;
+		}
+	}
+}
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+	.containerForm {
+		padding: 0rem;
+		width: 100%;
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 26rem) {
+	.containerForm {
+		padding: 0rem;
+		margin: 0px;
+
+		.form {
+			display: flex;
+			border: 1px solid black;
+			width: 350px;
+			height: 500px;
+			margin: 1rem 12%;
+		}
+		form {
+			input {
+				color: black;
+			}
+			button {
+				margin: 0 35%;
+			}
+			textArea {
+				height: 7rem;
+			}
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 50rem) {
+	.containerForm {
+		padding: 0rem;
+
+		.form {
+			display: flex;
+			border: 1px solid black;
+			width: 50vw;
+			margin: 1rem auto;
+			height: fit-content;
+		}
+		form {
+			input {
+				color: black;
+			}
+			button {
+				margin: 0 35%;
+			}
+			textarea {
+				height: 5rem;
+			}
+		}
+	}
+}
