@@ -17,7 +17,7 @@ const Footer = () => {
 					>
 						<RiMessengerLine
 							className="icon"
-							size={45}
+							size={40}
 							color={"#ffffff"}
 						/>
 					</a>
