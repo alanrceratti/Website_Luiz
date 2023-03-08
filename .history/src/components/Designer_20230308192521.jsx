@@ -10,7 +10,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 
 import "../components/splide-default.min.css";
 import useMedia from "../hooks/useMedia";
-// import InViewSection from "../hooks/InViewSection";
+import InViewSection from "../hooks/InViewSection";
 
 const Designer = () => {
 	const mobile = useMedia("(max-width: 26rem)");
@@ -28,45 +28,47 @@ const Designer = () => {
 				</div>
 				<div className="gridDescriptionDesigner">
 					{/* <InViewSection translate="-300px"> */}
-					<div className="DescriptionDesigner">
-						<h2>Luiz Fernando Inocente</h2>
-						<p>The dreamer. But also the doer.</p>
-						<h3>14+ years of Design. Brazilian. UK based.</h3>
-					</div>
-					<div className="DesignerP">
-						<p>
-							Luiz, the Source Design founder, is an experienced
-							Designer who has creating his path with strong
-							empashis in Interiors and Furniture. He has
-							gathering expertise through years from the
-							large-scale industry, fine carpentry, architecture
-							projects and running his own furniture business for
-							several years back in Brazil.
-						</p>
-						<br />
-						<p>
-							Particularly motivated by natural materials and
-							forms plus enthusiastic about simplicity and
-							efficiency, Luiz's designs are consistently emerging
-							with class, purpose as well as aesthetic. This
-							massive background is now condensed into Source
-							Design. And it's everything just for you.
-						</p>
-					</div>
+						<div className="DescriptionDesigner">
+							<h2>Luiz Fernando Inocente</h2>
+							<p>The dreamer. But also the doer.</p>
+							<h3>14+ years of Design. Brazilian. UK based.</h3>
+						</div>
+						<div className="DesignerP">
+							<p>
+								Luiz, the Source Design founder, is an
+								experienced Designer who has creating his path
+								with strong empashis in Interiors and Furniture.
+								He has gathering expertise through years from
+								the large-scale industry, fine carpentry,
+								architecture projects and running his own
+								furniture business for several years back in
+								Brazil.
+							</p>
+							<br />
+							<p>
+								Particularly motivated by natural materials and
+								forms plus enthusiastic about simplicity and
+								efficiency, Luiz's designs are consistently
+								emerging with class, purpose as well as
+								aesthetic. This massive background is now
+								condensed into Source Design. And it's
+								everything just for you.
+							</p>
+						</div>
 					{/* </InViewSection> */}
 				</div>
 				<div className="imgGridDesigner">
 					{/* <InViewSection translate="+400px"> */}
-					<div>
-						{images.map((image) => (
-							<img
-								key={image.id}
-								src={image.src}
-								alt={image.alt}
-								// onClick={() => handleImageClick(image)}
-							/>
-						))}
-					</div>
+						<div>
+							{images.map((image) => (
+								<img
+									key={image.id}
+									src={image.src}
+									alt={image.alt}
+									// onClick={() => handleImageClick(image)}
+								/>
+							))}
+						</div>
 					{/* </InViewSection> */}
 				</div>
 				{!mobile ? (
