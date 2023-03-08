@@ -32,15 +32,14 @@
 			gap: 1rem;
 			justify-content: center;
 			align-items: center;
+			margin: 0 auto;
 
 			div {
-				margin: 0 auto;
-
+				margin-right: 1rem;
 				img {
 					margin: 0 auto;
 					width: 350px;
 					height: 500px;
-					margin-right: 5vw;
 				}
 			}
 		}
@@ -98,7 +97,6 @@
 					margin: 0 auto;
 					img {
 						margin: 0 auto;
-						margin-left: 30px;
 						width: 350px;
 						height: 500px;
 					}
@@ -128,8 +126,6 @@
 					margin: 0 auto;
 					img {
 						margin: 0 auto;
-						margin-left: 30px;
-
 						width: 350px;
 						height: 500px;
 					}
