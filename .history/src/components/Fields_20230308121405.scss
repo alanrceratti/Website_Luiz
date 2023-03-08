@@ -74,7 +74,7 @@
 		}
 		.containerTextFields {
 			grid-column: 10/12;
-			grid-row: 9/12;
+			grid-row: 10/12;
 
 			width: 25rem;
 			height: 12rem;
@@ -99,7 +99,7 @@
 		}
 	}
 }
-@media screen and (min-width: 60rem) and (max-width: 97rem) {
+@media screen and (min-width: 60rem) and (max-width: 82rem) {
 	.containerFields {
 		height: 100%;
 
