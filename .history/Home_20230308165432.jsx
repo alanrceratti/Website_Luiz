@@ -14,27 +14,16 @@ import InViewSection from "./src/hooks/InViewSection";
 const Home = () => {
 	return (
 		<section>
-			<InViewSection>
-				<Source />
-			</InViewSection>
-			<InViewSection>
-				<Designer />
-			</InViewSection>
-			<InViewSection>
-				<Fields />
-			</InViewSection>
-			<InViewSection>
-				<Projects />
-			</InViewSection>
-			<InViewSection>
-				<Award />
-			</InViewSection>
-			<InViewSection>
-				<Slider />
-			</InViewSection>
-			<InViewSection>
-				<Contact />
-			</InViewSection>
+			<InViewSection></InViewSection>
+			<Source />
+			<Designer />
+			<Fields />
+
+			<Projects />
+
+			<Award />
+			<Slider />
+			<Contact />
 			<Footer />
 		</section>
 	);

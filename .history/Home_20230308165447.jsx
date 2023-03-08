@@ -18,22 +18,14 @@ const Home = () => {
 				<Source />
 			</InViewSection>
 			<InViewSection>
-				<Designer />
-			</InViewSection>
-			<InViewSection>
-				<Fields />
-			</InViewSection>
-			<InViewSection>
-				<Projects />
-			</InViewSection>
-			<InViewSection>
-				<Award />
-			</InViewSection>
-			<InViewSection>
-				<Slider />
-			</InViewSection>
-			<InViewSection>
-				<Contact />
+			<Designer />
+			<Fields />
+
+			<Projects />
+
+			<Award />
+			<Slider />
+			<Contact />
 			</InViewSection>
 			<Footer />
 		</section>

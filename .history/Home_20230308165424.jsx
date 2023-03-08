@@ -9,32 +9,20 @@ import Line from "./src/components/Line";
 import Projects from "./src/components/Projects";
 import Slider from "./src/components/Slider";
 import Source from "./src/components/Source";
-import InViewSection from "./src/hooks/InViewSection";
 
 const Home = () => {
 	return (
 		<section>
-			<InViewSection>
-				<Source />
-			</InViewSection>
-			<InViewSection>
-				<Designer />
-			</InViewSection>
-			<InViewSection>
-				<Fields />
-			</InViewSection>
-			<InViewSection>
-				<Projects />
-			</InViewSection>
-			<InViewSection>
-				<Award />
-			</InViewSection>
-			<InViewSection>
-				<Slider />
-			</InViewSection>
-			<InViewSection>
-				<Contact />
-			</InViewSection>
+			<
+			<Source />
+			<Designer />
+			<Fields />
+
+			<Projects />
+
+			<Award />
+			<Slider />
+			<Contact />
 			<Footer />
 		</section>
 	);
