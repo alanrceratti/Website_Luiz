@@ -27,15 +27,12 @@ button:hover {
 	color: rgb(255, 255, 255);
 }
 @media screen and (min-width: 26rem) and (max-width: 40rem) {
-	button {
-		right: 10px;
-		bottom: 10px;
-		position: absolute;
-	}
+	width: 22rem;
+	height: 9rem;
 }
 @media screen and (orientation: portrait) and (max-width: 26rem) {
 	button {
-		right: 0px;
+		right: 10px;
 		bottom: 10px;
 		position: absolute;
 	}

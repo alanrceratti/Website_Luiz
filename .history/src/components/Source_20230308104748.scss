@@ -33,7 +33,7 @@
 			height: 20rem;
 			background-color: var(--color1);
 			float: right;
-			margin-right: 150px;
+			margin-right: 100px;
 			margin-top: 200px;
 			margin-bottom: 200px;
 			bottom: 0px;
@@ -45,7 +45,7 @@
 					font-size: 40px;
 					font-family: var(--font2);
 					color: white;
-
+					line-height: 50px;
 					text-align: left;
 					margin: 1rem 2rem 0rem 2rem;
 				}
@@ -54,52 +54,38 @@
 	}
 }
 @media screen and (min-width: 60rem) and (max-width: 82rem) {
+}
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+}
+@media screen and (min-width: 26rem) and (max-width: 40rem) {
+}
+
+@media screen and (orientation: portrait) and (max-width: 26rem) {
 	.containerSource {
+		height: 100vh;
+		width: 100vw;
 		.containerSource2 {
+			.logo {
+				padding-top: 2rem;
+				max-width: 350px;
+				max-height: 250px;
+			}
 			.containerText {
-				width: 28rem;
-				height: 16rem;
+				width: 15rem;
+				height: 9rem;
+				margin-top: 100%;
+				margin-right: 20px;
+
 				.divText {
 					p {
-						font-size: 30px;
-						margin: 2rem 2rem 0rem 2rem;
+						font-size: 1rem;
+						line-height: 120%;
+						margin: 1rem 1rem 0rem 1rem;
 					}
 				}
-			}
-		}
-	}
-	@media screen and (min-width: 40rem) and (max-width: 60rem) {
-	}
-	@media screen and (min-width: 26rem) and (max-width: 40rem) {
-	}
-
-	@media screen and (orientation: portrait) and (max-width: 26rem) {
-		.containerSource {
-			height: 100vh;
-			width: 100vw;
-			.containerSource2 {
-				.logo {
-					padding-top: 2rem;
-					max-width: 350px;
-					max-height: 250px;
-				}
-				.containerText {
-					width: 15rem;
-					height: 9rem;
-					margin-top: 100%;
-					margin-right: 20px;
-
-					.divText {
-						p {
-							font-size: 1rem;
-
-							margin: 1rem 1rem 0rem 1rem;
-						}
-					}
-					Button {
-						margin-right: 30px;
-						padding: 0.3rem 1rem;
-					}
+				Button {
+					margin-right: 30px;
+					padding: 0.3rem 1rem;
 				}
 			}
 		}
@@ -124,7 +110,7 @@
 				.divText {
 					p {
 						font-size: 1rem;
-
+						line-height: 120%;
 						margin: 1rem 1rem 0rem 1rem;
 					}
 				}
