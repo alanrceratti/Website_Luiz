@@ -1,0 +1,64 @@
+.footerContainer {
+	width: 100vw;
+	height: 300px;
+	background-color: black;
+
+	ul {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			width: 3rem;
+			margin: 0.5rem 2rem;
+			list-style-type: none;
+			.instaFooter
+		}
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 26rem) {
+	.footerContainer {
+		width: 100vw;
+		height: 150px;
+		background-color: black;
+
+		ul {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			li {
+				width: 2rem;
+				margin: 0.5rem 2rem;
+				list-style-type: none;
+				a {
+					svg {
+						width: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.footerContainer {
+		width: 100%;
+		height: 6rem;
+		background-color: black;
+		ul {
+			li {
+				a {
+					svg {
+						width: 2.5rem;
+					}
+				}
+			}
+		}
+	}
+}
