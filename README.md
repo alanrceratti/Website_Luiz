@@ -1,7 +1,7 @@
 
 # Client Portfolio
 
-This is a portfolio for a professional Interior Designer. 
+This is a portfolio for a professional Designer. 
 
 The site is paused from building due to customer not being able to provide resources to continue at the moment.
 
